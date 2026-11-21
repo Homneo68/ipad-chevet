@@ -1,0 +1,9 @@
+{
+  "ville": "Paris",
+  "pays": "FR",
+  "nuit_debut": "22:30",
+  "nuit_fin": "07:00",
+  "diaporama_secondes": 30,
+  "jours_agenda": 7,
+  "max_photos": 150
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Chevet">
+<title>Chevet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="jour">
+
+<div id="photos">
+  <div class="calque" id="c0"></div>
+  <div class="calque" id="c1"></div>
+  <div id="photos-vide">Les photos de ton album apparaîtront ici après la première mise à jour.</div>
+</div>
+
+<div id="panneau">
+  <div id="heure">--:--</div>
+  <div id="date"></div>
+
+  <div id="meteo">
+    <div id="meteo-actuel"><span id="meteo-icone"></span><span id="meteo-temp"></span></div>
+    <div id="meteo-detail"></div>
+    <div id="previsions"></div>
+  </div>
+
+  <div id="agenda"></div>
+
+  <div id="barre">
+    <button id="btn-reveil" type="button">Réveil</button>
+    <button id="btn-nuit" type="button">Mode nuit</button>
+  </div>
+  <div id="son-jour" class="bandeau-son">Touche l’écran une fois pour activer le son du réveil.</div>
+  <div id="maj"></div>
+</div>
+
+<div id="nuit">
+  <div id="nuit-centre">
+    <div id="nuit-heure">--:--</div>
+    <div id="nuit-infos"></div>
+  </div>
+  <div id="son-nuit" class="bandeau-son">Touche l’écran pour activer le son du réveil.</div>
+</div>
+
+<div id="reglage">
+  <div class="boite">
+    <div class="reglage-titre">Heure du réveil</div>
+    <div class="reglage-ligne">
+      <div class="colonne">
+        <button type="button" data-act="h+">+</button>
+        <div id="r-h" class="chiffres">07</div>
+        <button type="button" data-act="h-">−</button>
+      </div>
+      <div class="deux-points">:</div>
+      <div class="colonne">
+        <button type="button" data-act="m+">+</button>
+        <div id="r-m" class="chiffres">00</div>
+        <button type="button" data-act="m-">−</button>
+      </div>
+    </div>
+    <button type="button" id="r-actif" data-act="actif">Réveil activé</button>
+    <button type="button" data-act="test">Tester le son</button>
+    <button type="button" data-act="ok" class="principal">Terminé</button>
+  </div>
+</div>
+
+<div id="sonnerie">
+  <div id="sonnerie-heure">--:--</div>
+  <div class="sonnerie-boutons">
+    <button type="button" id="btn-repeter">Répéter dans 9 min</button>
+    <button type="button" id="btn-arreter">Arrêter</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
